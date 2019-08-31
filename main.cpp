@@ -12,7 +12,7 @@ int main()
 	int window_width;
 	int window_height;
 	int wator_width;
-    int wator_height;
+    	int wator_height;
 
 	std::cout << "Enter window width: ";
 	std::cin >> window_width;
