@@ -5,7 +5,7 @@
 #pragma once
 
 class Animal;
-class Zebra;
+
 class Grid
 {
 	private:
