@@ -11,19 +11,22 @@ int main()
 	//Setup
 	int window_width;
 	int window_height;
-	int wator_size;
+	int wator_width;
+    int wator_height;
 
 	std::cout << "Enter window width: ";
 	std::cin >> window_width;
 	std::cout << "Enter window height: ";
 	std::cin >> window_height;
-	std::cout << "Enter wator size: ";
-	std::cin >> wator_size;
+	std::cout << "Enter wator width: ";
+	std::cin >> wator_width;
+	std::cout << "Enter wator height: ";
+	std::cin >> wator_height;
 
 	//Initilises grid to begin simulation
 	int starting_zebra_percentage = 15;
 	int starting_lion_percentage = 2;
-	Grid grid(sf::Vector2f(wator_size, wator_size), sf::Vector2f(window_width, window_height));
+	Grid grid(sf::Vector2f(wator_width, wator_height), sf::Vector2f(window_width, window_height));
 	grid.init(starting_zebra_percentage, starting_lion_percentage);
 	sf::RenderWindow window(sf::VideoMode(window_width, window_height, 32), "Pstefa's Zebras and Lions");
 	sf::Font arial;
